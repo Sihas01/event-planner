@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playfair-display-bold {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+.container{
+    height: 120px;
+    margin-left: 160px;
+    margin-right: 160px;
+    display: block;
+   
+}
+
+.navBar{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+}
+
+.nav-list{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo{
+    color: #5C63FF;
+    font-size: 26px;
+    
+
+}
+
+.logo span{
+    color: #1D206A;
+}
+
+.button-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-group button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #5C63FF;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.hero-section{
+    position: relative;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 25px;
+    gap: 15px;
+   
+}
+
+.hero-section .left-col{
+    grid-template-columns: 2fr;
+    background-color: #5C63FF;
+    background-image: url("../resources/image-one.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.hero-section .right-col{
+    
+    
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 60%;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(16px);
+}
+
+.hero-section .right-col h2{
+    width: 400px;
+    font-size: 42px; 
+}
+
+.hero-section .right-col p{
+    margin-top: 8px;
+    font-size: 18px;
+    color: #909090;
+}
+
+.brands{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #5c64ff7d;
+}
+
+
+.wedding-banner{
+    background-image: url("../resources/wedding-banner.jpg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+}
+
+.service{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.service .left-col{
+    grid-template-columns: 1fr;
+    
+}
+
+.service .left-col .title{
+    display: flex;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.service .left-col .title .icon{
+    width: 5px;
+    height: 45px;
+    background-color: #000000;
+}
+
+.service .left-col .title h2{
+    font-size: 40px;
+}
+
+.service .left-col .details{
+    margin-top: 25px;
+    width: 550px;
+    font-size: 22px;
+    color: #909090;
+}
+
+.service .left-col .button-service{
+    margin-top: 25px;
+
+}
+
+.service .left-col .button-service button{
+    background-color: #5C63FF;
+    color: #ffffff;
+    padding-left: 105px;
+    padding-top: 18px;
+    padding-right: 105px;
+    padding-bottom: 18px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.service .right-col{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/service.png");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bottle-banner{
+   background-image: url("../resources/bottle-banner.png");
+   height: 50vh;
+   background-repeat: no-repeat;
+}
+
+.packagers{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.packagers .left-col{
+    grid-template-columns: 1fr;
+    
+}
+
+.packagers .left-col .title{
+    display: flex;
+    gap: 15px;
+    margin-top: 75px;
+}
+
+.packagers .left-col .title .icon{
+    width: 5px;
+    height: 45px;
+    background-color: #000000;
+}
+
+.packagers .left-col .title h2{
+    font-size: 40px;
+}
+
+.packagers .left-col .details{
+    margin-top: 25px;
+    width: 550px;
+    font-size: 22px;
+    color: #909090;
+}
+
+.packagers .left-col .button-packagers{
+    margin-top: 25px;
+}
+
+.packagers .left-col .button-packagers button{
+    background-color: #5C63FF;
+    color: #ffffff;
+    padding-left: 105px;
+    padding-top: 18px;
+    padding-right: 105px;
+    padding-bottom: 18px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.packagers .right-col{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/packagers.png");
+    height: 70vh;
+    margin-top: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.callUs{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.textOne, .textTwo{
+    font-size: 42px;
+}
+
+.callUS-btn{
+    margin-top: 15px;
+    background-color: #5C63FF;
+    padding-left: 85px;
+    padding-top: 18px;
+    padding-right: 85px;
+    padding-bottom: 18px;
+    border: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+footer{
+ 
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    
+    margin-top: 200px;
+}
+
+footer .left-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+
+.footer-end{
+    background-color: #1D206A;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    
+}
+
+.map{
+    background-image: url("../resources/map.png");
+    height: 35vh;
+    margin-bottom: 10px;
+}
+
+
+
+.banner-service{
+    background-image: url("../resources/service-banner.png");
+    height: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+    
+    
+}
+
+.service-title{
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(16px);
+    padding: 20px 65px 20px 65px;
+}
+
+
+.services{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    
+}
+
+.s1{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/s1.png");
+    height:50vh;
+    background-repeat: no-repeat;
+}
+
+.s1 h1, .s2 h1, .s3 h1, .s4 h1, .s5 h1, .s6 h1, .s7 h1{
+    color: #ffffff;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 45vh;
+}
+
+.s2{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/s2.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+
+.s3{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/s3.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+
+.s4{
+    margin-top: 35px;
+    background-image: url("../resources/s4.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+
+.other{
+    margin-top: 45px;
+}
+.other-services{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.s5{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/o1.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+
+.s5 h2{
+    display: flex;
+    margin-top: 110px;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.s6{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/o2.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+}.s7{
+    grid-template-columns: 1fr;
+    background-image: url("../resources/o3.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+
+
+.packagers-new{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 10%;
+    align-items: center;
+    
+}
+
+.packagers-new .right-col{
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+}
+
+.packagers-new .right-col .header{
+    background-color: #751EE4;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.packagers-new .right-col .package-body{
+    background-color: #b1b5f9;
+}
+
+.packagers-new .right-col .package-body ul{
+    display: inline-block;
+    padding: 60px;
+    font-size: 18px;
+    
+}
+
+.packagers-new .middle-col{
+    grid-template-columns: 1fr;
+}
+
+.packagers-new .middle-col{
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+}
+
+.packagers-new .middle-col .header{
+    background-color: #751EE4;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.packagers-new .middle-col .package-body{
+    background-color: #b1b5f9;
+}
+
+.packagers-new .middle-col .package-body ul{
+    display: inline-block;
+    padding: 100px;
+    font-size: 18px;
+}
+
+
+.packagers-new .left-col{
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+}
+
+.packagers-new .left-col .header{
+    background-color: #751EE4;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.packagers-new .left-col .package-body{
+    background-color: #b1b5f9;
+}
+
+.packagers-new .left-col .package-body ul{
+    display: inline-block;
+    padding: 60px;
+    font-size: 18px;
+}
+
+.btn-select{
+    background-color: #5C63FF;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+}
+
+
+.SignIn-banner{
+    background-image: url('../resources/wedding-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    
+ }
+
+.signIn{
+    background-color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+   }
+  
+   .cen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   }
+  
+   .icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+   }
+  
+   .ficon img{
+    width: 30px;
+    height: 30px;
+   }
+  
+   .sicon img{
+    width: 30px;
+    height: 30px;
+   }
+  
+   .ficon , .sicon{
+    padding: 6px;
+    border-radius: 10px;
+   }
+  
+   .email1{
+    height: 15px;
+   }
+  
+   .sign-btn{
+     border: none;
+     padding-left: 130px;
+     padding-right: 130px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     background-color: #000000cc;
+     color: #ffffff;
+     border-radius: 5px;
+   }
+  
+
+   @media only screen and (max-width: 600px) {
+    body {
+     
+      overflow-x: hidden;
+    }
+
+    .container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .hero-section{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section .left-col{
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .hero-section .right-col{
+        position: relative;
+        margin-left: 0px;
+        margin-top: 15px;
+    } 
+
+    .brands{
+        margin-top: 65%;
+        
+    }
+    .wedding-banner{
+        background-position: center;
+        background-color: red;
+    }
+
+    .service{
+       
+        grid-template-columns:  1fr;
+        
+    }
+
+    .service .left-col .title{
+        margin-top: 10px;
+    }
+
+    .service .left-col .title h2{
+        font-size: 30px;
+    }
+
+    .service .left-col .details{
+        
+        width: 500px;
+        font-size: 18px;
+        
+    }
+
+    .service .right-col{
+       margin-top: 15px;
+       height: 55vh;
+    }
+
+    .bottle-banner{
+        background-position: center;
+        
+     }
+
+     .packagers{
+        grid-template-columns: 1fr ;
+        
+    }
+    
+    .packagers .left-col .title{
+        margin-top: 15px;
+    }
+    
+    .packagers .left-col .title h2{
+        font-size: 30px;
+    }
+    
+    .packagers .left-col .details{
+       
+        width: 500px;
+        font-size:18px;
+        
+    }
+
+    footer{
+
+        grid-template-columns:1fr;
+    }
+
+    footer .left-col{
+        
+        grid-template-columns: 1fr ;
+    }
+    
+    .services{
+        
+        grid-template-columns: 1fr ;
+        
+        
+    }
+
+    .other-services{
+       
+        grid-template-columns: 1fr ;
+        
+    }
+
+    .packagers-new{
+    
+        
+        grid-template-columns: 1fr ;
+        
+        
+    }
+
+    .packagers-new .right-col .package-body ul{
+        display: inline-block;
+       
+        font-size: 18px;
+        
+    }
+    
+    
+  }
